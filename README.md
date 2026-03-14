@@ -4,11 +4,11 @@ A Chrome extension designed to streamline participation in online classes. It au
 
 **Background:**
 
-In online classes, many of us prefer watching the recorded lecture later so we can learn at our own pace. However, our university requires an attendance threshold, so students often join classes mainly to mark attendance.
+In terms of online classes, many of us prefer watching the recorded lecture later so we can learn at our own pace. However, as our university requires an attendance threshold, so students often join classes mainly to mark their attendance.
 
-During the class, the device is often left on the table while students scroll their phones or do other tasks. This happens even during make-up online classes (specially arranged classes during vacations).
+During the class, our device is often left on the table while we scroll their phones or do other tasks. This happens specially during on those make-up online classes (specially arranged classes during vacations to cover up the syllabus).
 
-This was not meant to be a serious project — just a small experiment. When the idea came to mind, I was curious whether the process could be automated the way i was thinking that time, so I built this to see if it was possible specially cracking up the manual roll call one.
+This was not meant to be a serious project-- just a small experiment. When the idea came to mind, I was curious whether the process could be automated the way i was thinking that time, so I built this to see if it was possible specially cracking up the manual roll call one.
 
 ---
 
