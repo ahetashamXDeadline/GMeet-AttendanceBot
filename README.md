@@ -1,6 +1,6 @@
 # Automate Attendance for Google Meet 
 
-A sophisticated Chrome extension designed to streamline participation in online classes. It automates attendance submission through chat code detection and uses AI-like caption monitoring to detect verbal roll-calls.
+A Chrome extension designed to streamline participation in online classes. It automates attendance submission through chat code detection and uses AI-like caption monitoring to detect verbal roll-calls.
 
 ---
 
