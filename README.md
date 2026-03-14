@@ -1,10 +1,10 @@
-# Auto Attendance for Google Meet 🎓
+# Automate Attendance for Google Meet 🎓
 
 A sophisticated Chrome extension designed to streamline participation in online classes. It automates attendance submission through chat code detection and uses AI-like caption monitoring to detect verbal roll-calls.
 
 ---
 
-## ⚡ Key Features
+## Key Features
 
 ### 📋 Intelligent Chat Monitoring
 * **Automated Code Detection**: Watches the Google Meet chat for numeric attendance codes (6-10 digits).
@@ -19,7 +19,7 @@ A sophisticated Chrome extension designed to streamline participation in online 
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 1. **Download** the repository as a ZIP or clone it.
 2. Navigate to `chrome://extensions` in your browser.
@@ -29,7 +29,7 @@ A sophisticated Chrome extension designed to streamline participation in online 
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 ### Attendance by Chat
 1. Launch the extension and enter your **Student ID**.
@@ -45,19 +45,19 @@ A sophisticated Chrome extension designed to streamline participation in online 
 
 ---
 
-## 🧠 Challenges & Technical Journey
+## Challenges & Technical Journey
 
 Building a reliable automation tool for a platform as complex as Google Meet presented several significant challenges. Here is the evolution of the project:
 
-### Phase 1: Grid Monitoring (Failed) ❌
+### Phase 1: Grid Monitoring (Failed) 
 Initially, the goal was to detect roll-call by monitoring the "Mic Button" icons of other participants in the grid. If many icons turned red or white in a short period, it might indicate a roll-call.
 * **The Issue**: Meet's DOM is extremely dynamic and uses obfuscated class names. Tracking hundreds of changing elements in real-time caused significant performance lag and was unreliable across different grid layouts.
 
-### Phase 2: Audio Level Detection (Failed) ❌
+### Phase 2: Audio Level Detection (Failed) 
 The second attempt involved using the Web Audio API to detect volume spikes in the meeting audio.
 * **The Issue**: Modern browser security policies (CORS and MediaStream restrictions) prevent extensions from easily accessing the internal audio streams of a separate tab without invasive permissions and constant user prompts, which ruined the "seamless" experience.
 
-### Phase 3: Live Caption Integration (Success) ✅
+### Phase 3: Live Caption Integration (Success) 
 Finally, the decision was made to leverage Meet's own **Live Captions**. 
 * **The Solution**: By observing the DOM elements specifically dedicated to captions, the extension can perform clean, high-accuracy text analysis. This method proved to be the most robust, as it works regardless of the user's grid layout and respects privacy by only "reading" what is already visible to the user as text.
 
