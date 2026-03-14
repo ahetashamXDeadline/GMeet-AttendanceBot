@@ -1,4 +1,4 @@
-# Automate Attendance for Google Meet 🎓
+# Automate Attendance for Google Meet 
 
 A sophisticated Chrome extension designed to streamline participation in online classes. It automates attendance submission through chat code detection and uses AI-like caption monitoring to detect verbal roll-calls.
 
@@ -6,12 +6,12 @@ A sophisticated Chrome extension designed to streamline participation in online 
 
 ## Key Features
 
-### 📋 Intelligent Chat Monitoring
+### Intelligent Chat Monitoring
 * **Automated Code Detection**: Watches the Google Meet chat for numeric attendance codes (6-10 digits).
 * **Threshold-Based Response**: Automatically types and sends your Student ID once a configurable number of unique codes are detected.
 * **Smart Validation**: Ensures codes are only counted once and follows real-time progress via the popup UI.
 
-### 🎙️ Advanced Roll-Call Detector
+### Advanced Roll-Call Detector
 * **Live Caption Analysis**: Real-time monitoring of Google Meet's built-in captions for keyword triggers like "Yes", "Present", "Yes Sir", or "Yes Ma'am".
 * **Siren Alarm System**: Triggers a loud, high-visibility alarm overlay when a spike in caption responses is detected, ensuring you never miss your turn.
 * **Auto-Chat Messaging**: Optionally configure a custom message to be automatically sent to the chat when the roll-call starts.
