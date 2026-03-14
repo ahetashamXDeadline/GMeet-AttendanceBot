@@ -63,12 +63,12 @@ Finally, the decision was made to leverage Meet's own **Live Captions**.
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 * **Core**: JavaScript (Content Scripts, Popup Logic)
 * **UI**: HTML5, CSS3 (Modern HSL Design Tokens)
 * **APIs**: Chrome Extension API (Storage, Messaging), Web Audio API (Siren Generation), MutationObservers (DOM Interaction)
 
 ---
 
-## ⚖️ License
-This project is for personal use and educational purposes only. Always comply with your institution's attendance policies.
+## ⚖️ License 
+While giving the MIT License , this project is intended for learning purposes only. So, kindly always comply with your institution's attendance policies.
