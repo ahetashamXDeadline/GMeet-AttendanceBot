@@ -2,6 +2,14 @@
 
 A Chrome extension designed to streamline participation in online classes. It automates attendance submission through chat code detection and uses AI-like caption monitoring to detect verbal roll-calls.
 
+**Background:**
+
+In online classes, many of us prefer watching the recorded lecture later so we can learn at our own pace. However, our university requires an attendance threshold, so students often join classes mainly to mark attendance.
+
+During the class, the device is often left on the table while students scroll their phones or do other tasks. This happens even during make-up online classes (specially arranged classes during vacations).
+
+This was not meant to be a serious project — just a small experiment. When the idea came to mind, I was curious whether the process could be automated the way i was thinking that time, so I built this to see if it was possible specially cracking up the manual roll call one.
+
 ---
 
 ## Key Features
@@ -58,7 +66,7 @@ The second attempt involved using the Web Audio API to detect volume spikes in t
 * **The Issue**: Modern browser security policies (CORS and MediaStream restrictions) prevent extensions from easily accessing the internal audio streams of a separate tab without invasive permissions and constant user prompts, which ruined the "seamless" experience.
 
 ### Phase 3: Live Caption Integration (Success) 
-Finally, the decision was made to leverage Meet's own **Live Captions**. 
+Finally, I noticed that Gmeet introduced a new feature of live captions.So, the decision was made to leverage Meet's own **Live Captions** this time. 
 * **The Solution**: By observing the DOM elements specifically dedicated to captions, the extension can perform clean, high-accuracy text analysis. This method proved to be the most robust, as it works regardless of the user's grid layout and respects privacy by only "reading" what is already visible to the user as text.
 
 ---
