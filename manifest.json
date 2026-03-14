@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Attendance — Google Meet",
+  "version": "1.0.0",
+  "description": "Automatically detects attendance codes in Google Meet chat and responds with your student ID.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": ["https://meet.google.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
